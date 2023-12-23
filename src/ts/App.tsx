@@ -14,6 +14,7 @@ import '../css/colors.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import Components
+import CookiePopup from './components/cookies/cookies';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 
@@ -31,6 +32,8 @@ function App() {
     return (
         <Router>
             <Header/>
+
+            {/* <CookiePopup/> */}
 
             <Routes>
                 <Route
