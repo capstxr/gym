@@ -64,11 +64,33 @@ const Header = () => {
 
                     <li className="nav-item">
                         <Link 
+                            to="/pricing"
+                            rel='noreferrer noopener nfollow'
+                            className='nav-link'
+                        >
+                            Pricing
+                        </Link>
+                    </li>
+
+                    <li className="nav-item">
+                        <Link 
                             to="/contact"
                             rel='noreferrer noopener nfollow'
                             className='nav-link'
                         >
                             Contact
+                        </Link>
+                    </li>
+                </ul>
+
+                <ul className="nav-list">
+                    <li className="nav-item">
+                        <Link 
+                            to="/store"
+                            rel='noreferrer noopener nfollow'
+                            className='nav-link'
+                        >
+                            store
                         </Link>
                     </li>
                 </ul>

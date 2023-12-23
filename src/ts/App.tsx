@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import Components
 import Header from './components/header/header';
+import Footer from './components/footer/footer';
 
 // Import Pages
 import Home from './pages/home/home';
@@ -29,6 +30,8 @@ function App() {
                     element={<Home/>}
                 />
             </Routes>
+
+            <Footer/>
         </Router>
     );
 }

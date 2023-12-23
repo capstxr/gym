@@ -1,6 +1,7 @@
 // Import packages
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Star, StarFill } from "react-bootstrap-icons";
 
 // Import CSS
 import './home.scss'
@@ -73,22 +74,31 @@ const Home = () => {
     const Review = (props: ReviewProps) => {
         const { review, name, occupation, image, stars } = props;
 
+        const renderStars = () => {
+            const starElements = [];
+
+            for (let i = 0; i < 5; i++) {
+                starElements.push(i < stars ? <StarFill className="star star-filled" key={i} /> : <Star className="star" key={i} />);
+            }
+
+            return starElements;
+        };
+
         return (
             <div className="review-wrapper">
                 <div className="top-stars">
-
+                    {renderStars()}
                 </div>
 
                 <p className="review">"{review}"</p>
 
                 <div className="review-bottom">
-                    <div className="r-b-left">
-                        <img
-                            src={`/images/clients${image}`}
-                            alt="Client"
-                            className="review-image"
-                        />
-                    </div>
+                    <img
+                        src={`/images/clients/${image}`}
+                        alt="Client"
+                        className="review-image"
+                        loading="lazy"
+                    />
 
                     <div className="r-b-right">
                         <span className="name">{name}</span>
@@ -279,8 +289,30 @@ const Home = () => {
                         Read from our clients
                     </p>
 
-                    <div className="review-grid">
+                    <div className="home-service-grid">
+                        <Review
+                            review="This gym stands out with state-of-the-art equipment and a spacious layout—a bodybuilder's dream. The commitment to serious strength training is impressive, delivering phenomenal gains. The place to be for muscle building."
+                            name="Mike Oxlong"
+                            occupation="bodybuilder"
+                            image="bodybuilder.jfif"
+                            stars={4}
+                        />
 
+                        <Review
+                            review="This gym is my second home! The clean, vibrant atmosphere and specialized training programs have significantly improved my agility and endurance. Highly recommended for athletes seeking a dynamic and supportive space."
+                            name="Matthew Perry"
+                            occupation="footballer"
+                            image="matthew.webp"
+                            stars={5}
+                        />
+
+                        <Review
+                            review="As a personal trainer, I'm discerning about where I train. This gym exceeds expectations with a clean facility, professional staff, and flexibility. Highly recommended for comprehensive experiences."
+                            name="R.U. Winningson"
+                            occupation="personal trainer"
+                            image="sporty.jfif"
+                            stars={5}
+                        />
                     </div>
                 </div>
             </section>
