@@ -1,3 +1,11 @@
+/* Figma Designs
+
+https://www.figma.com/file/mAWQTv9Am31iwKNFVXOeC4/andre's-gym-(Community)?node-id=0%3A1&mode=dev
+
+https://www.figma.com/file/AgSJfOMJKoSFvWWm21REDV/Gym-Website-Design-(Community)?type=design&node-id=1-8&mode=design&t=tGvAxC7WXlp6UOkd-0
+
+*/
+
 // Import Public CSS
 import '../css/App.scss';
 import '../css/colors.css';

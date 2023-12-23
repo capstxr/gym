@@ -66,10 +66,15 @@
 .home-service-grid {
     width: 100%;
     display: grid;
+    align-items: start;
     justify-content: space-between;
     grid-template-columns: repeat(3,calc(33% - 50px));
     row-gap: 50px;
     margin-top: 50px;
+}
+
+#review-grid {
+    align-items: stretch;
 }
 
 .service-container {
@@ -226,5 +231,383 @@
         color: rgba(200,200,200);
         font-style: italic;
         text-transform: capitalize;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .service-name {
+        font-size: 28px;
+    }
+
+    .service-description {
+        font-size: 18px;
+    }
+
+    .home-service-grid {
+        grid-template-columns: repeat(3, calc(33% - 30px));
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .service-name {
+        font-size: 26px;
+    }
+
+    .home-service-grid {
+        grid-template-columns: repeat(3, calc(33% - 20px));
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home-service-grid {
+        grid-template-columns: repeat(3, calc(33% - 10px));
+    }
+
+    .service-name {
+        font-size: 24px;
+    }
+
+    .service-description {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .star {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .review {
+        font-size: 14px;
+    }
+
+    .review-image {
+        width: 38px;
+        height: 38px;
+    }
+
+    .r-b-right {
+        .name {
+            font-size: 14px;
+        }
+
+        .occupation {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home-service-grid {
+        grid-template-columns: repeat(3, calc(33% - 5px));
+        justify-content: center;
+        gap: 25px;
+    }
+
+    #review-grid {
+        grid-template-columns: repeat(3, calc(33% - 5px));
+        gap: 15px;
+    }
+
+    .service-name {
+        font-size: 20px;
+    }
+
+    .service-description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .landing-head {
+        font-size: 62px;
+    }
+
+    .slogan {
+        font-size: 32px;
+    }
+
+    .slogan .s-large {
+        font-size: 42px;
+    }
+
+    .home-service-grid {
+        grid-template-columns: repeat(2, calc(50% - 15px));
+        gap: 25px;
+    }
+
+    .service-name {
+        font-size: 24px;
+    }
+
+    .service-description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .landing-head {
+        font-size: 54px;
+    }
+
+    .slogan {
+        font-size: 28px;
+    }
+
+    .slogan .s-large {
+        font-size: 36px;
+    }
+
+    .landing-text {
+        font-size: 20px;
+    }
+
+    .service-name {
+        font-size: 22px;
+    }
+
+    .service-description {
+        font-size: 16px;
+    }
+
+    .dont-think {
+        font-size: 18px;
+    }
+
+    #review-grid {
+        grid-template-columns: repeat(2, calc(50% - 20px));
+        justify-content: space-between;
+        gap: none;
+    }
+
+    .review-wrapper:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #review-grid {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .review-wrapper {
+        width: 100%;
+    }
+
+    #review-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #h-l-content {
+        gap: 30px;
+    }
+
+    .slogan {
+        font-size: 24px;
+    }
+
+    .slogan .s-large {
+        font-size: 32px;
+    }
+
+    .landing-head {
+        font-size: 48px;
+    }
+
+    .landing-text {
+        font-size: 18px;
+        width: 500px !important;
+    }
+
+    .home-service-grid {
+        gap: 15px;
+    }
+
+    .service-name {
+        font-size: 20px;
+    }
+
+    .service-description {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .home-service-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .service-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .service-img {
+        height: 200px;
+    }
+
+    .service-name {
+        font-size: 36px;
+    }
+
+    .service-description {
+        font-size: 22px;
+        width: 80vw;
+    }
+
+    #start-today .section-heading {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #h-l-content {
+        gap: 25px;
+    }
+
+    .landing-head {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slogan {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .landing-head {
+        font-size: 54px;
+        width: 100% !important;
+        text-align: center;
+        line-height: 56px;
+    }
+
+    .landing-text {
+        width: 100% !important;
+        margin-top: -10px;
+        line-height: 24px;
+    }
+
+    .service-container {
+        gap: 10px;
+    }
+
+    .service-img {
+        height: auto;
+    }
+
+    .service-name {
+        font-size: 25px;
+    }
+
+    .service-description {
+        width: 100%;
+        margin-top: -5px;
+        font-size: 16px;
+    }
+
+    #start-today {
+        min-height: 400px;
+
+        .section-heading {
+            line-height: 40px !important;
+            width: 100%;
+        }
+    }
+
+    .dont-think {
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .landing-head {
+        font-size: 34px;
+        line-height: 39px;
+    }
+
+    .slogan {
+        font-size: 22px;
+    }
+
+    .slogan .s-large {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .landing-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .service-name {
+        font-size: 19px;
+    }
+
+    .service-description {
+        font-size: 14px;
+    }
+
+    .star {
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+    }
+
+    .review {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+    }
+
+    .review-image {
+        width: 36px;
+        height: 36px;
+    }
+
+    .r-b-right {
+        gap: 2px;
+
+        .name {
+            font-size: 13px;
+        }
+
+        .occupation {
+            font-size: 13px;
+        }
+    }
+
+    #start-today {
+        .content {
+            gap: 10px;
+        }
+
+        .section-heading {
+            font-size: 28px;
+            line-height: 32px !important;
+        }
+
+        a {
+            margin-top: 10px;
+        }
+    }
+
+    .dont-think {
+        font-size: 15px;
+        line-height: 20px;
     }
 }

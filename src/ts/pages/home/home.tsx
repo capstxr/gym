@@ -289,7 +289,7 @@ const Home = () => {
                         Read from our clients
                     </p>
 
-                    <div className="home-service-grid">
+                    <div className="home-service-grid" id="review-grid">
                         <Review
                             review="This gym stands out with state-of-the-art equipment and a spacious layout—a bodybuilder's dream. The commitment to serious strength training is impressive, delivering phenomenal gains. The place to be for muscle building."
                             name="Mike Oxlong"

@@ -40,3 +40,32 @@
     height: 200px;
     width: 300px;
 }
+
+@media screen and (max-width: 1000px) {
+    #footer .content {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    #footer .content {
+        grid-template-columns: repeat(3, auto);
+        justify-content: start;
+        column-gap: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer .content {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #footer .content {
+        display: flex;
+        flex-direction: column;
+    }
+}
