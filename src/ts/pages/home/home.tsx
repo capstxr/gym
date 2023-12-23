@@ -316,6 +316,21 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* End of why us */}
+
+            {/* Start of check our pricing */}
+
+            <section
+                id="pricing-box"
+                className="wrapper"
+            >
+                <div className="content">
+
+                </div>
+            </section>
+
+            {/* End of check our pricing */}
         </section>
     );
 }
