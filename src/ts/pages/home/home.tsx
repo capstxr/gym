@@ -1,0 +1,291 @@
+// Import packages
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
+// Import CSS
+import './home.scss'
+
+const Home = () => {
+    useEffect(() => {
+        document.title = "Power Gym | Home";
+        window.scrollTo(0,0);
+    }, []);
+
+    // Service Component
+
+    interface ServiceProps {
+        name_1?: string;
+        name_2?: string;
+        description: string;
+        urlTo: string;
+        img: string;
+        id?: string;
+    }
+
+    const Service = (props: ServiceProps) => {
+        const { img, name_1, name_2, description, urlTo, id } = props;
+
+        return (
+            <div className="service-container" id={id}>
+                <img
+                    src={`/images/services/${img}`}
+                    alt="Service"
+                    className="service-img"
+                />
+
+                <span className="service-name">
+                    <span className="gray-text">{name_1} </span>
+
+                    {name_2 && (
+                    <span className="red">
+                        {name_2}
+                    </span>
+                    )}
+                </span>
+
+                <p className="service-description white">
+                    {description}
+                </p>
+
+                <Link
+                    to={urlTo}
+                    rel="noreferrer noopener nofollow"
+                    className="red-btn-1 b-40 white red-btn-2"
+                >
+                    Read more
+                </Link>
+            </div>
+        );
+    }
+
+    // End of service component
+
+    // Start of review component
+
+    interface ReviewProps {
+        review: string;
+        name: string;
+        occupation: string;
+        image: string;
+        stars: number;
+    }
+
+    const Review = (props: ReviewProps) => {
+        const { review, name, occupation, image, stars } = props;
+
+        return (
+            <div className="review-wrapper">
+                <div className="top-stars">
+
+                </div>
+
+                <p className="review">"{review}"</p>
+
+                <div className="review-bottom">
+                    <div className="r-b-left">
+                        <img
+                            src={`/images/clients${image}`}
+                            alt="Client"
+                            className="review-image"
+                        />
+                    </div>
+
+                    <div className="r-b-right">
+                        <span className="name">{name}</span>
+                        <span className="occupation">{occupation}</span>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    // End of review component
+
+    return (
+        <section
+            className="page"
+            id="home"
+        >
+            {/* Start of landing */}
+
+            <section
+                className="wrapper"
+                id="home-landing"
+            >
+                <img
+                    src="/images/home-landing-bg.jpg"
+                    alt="Gym Background"
+                    className="landing-bg"
+                    loading="lazy"
+                />
+
+                <div
+                    className="content"
+                    id="h-l-content"
+                >
+                    <h2 className="slogan">
+                        <span className="s-large">"</span>
+                        <span className="s-large">W</span>
+                        <span className="s-text">ork harder, get stronger</span>
+                        <span className="s-large">"</span>
+                    </h2>
+
+                    <h1 className="landing-head">
+                        <span className="white">Easy with </span>
+                        <span className="red">Power </span>
+                        <span className="white">Gym</span>
+                    </h1>
+
+                    <span className="landing-text white">
+                        Forge strength, crush limits. Welcome to Power Gym, where hardcore meets heart. Unleash your power and conquer the extraordinary.
+                    </span>
+
+                    <Link
+                        to='/pricing'
+                        rel="noreferrer noopener nofollow"
+                        className="red-btn-1 white b-4 uppercase"
+                    >
+                        Become a member
+                    </Link>
+                </div>
+            </section>
+
+            {/* End of landing */}
+
+            {/* Start of services */}
+
+            <section
+                id="home-services"
+                className="wrapper"
+            >
+                <div className="content">
+                    <h2 className="section-heading uppercase">
+                        <span className="gray-text">What </span>
+                        <span className="red">we offer</span>
+                    </h2>
+
+                    <span className="heading-text white uppercase">
+                        Our top features
+                    </span>
+
+                    <div className="home-service-grid">
+                        <Service
+                            img="basic_fitness.png"
+                            name_1="Basic"
+                            name_2="Fitness"
+                            description="We cover everything you need in a gym, from treadmills and e-bikes to heavy weights."
+                            urlTo="/basic-fitness"
+                        />
+
+                        <Service
+                            img="personal_trainers.jpg"
+                            name_1="Personal"
+                            name_2="Trainers"
+                            description="Our professional coaches will help you reach your goals with a personalized program."
+                            urlTo="/personal-trainers"
+                        />
+
+                        <Service
+                            img="sport_masseuse.jpg"
+                            name_1="Sport"
+                            name_2="Masseuses"
+                            description="Regular massages will help with blood flow, relieve muscle pain and tension."
+                            urlTo="/sport-masseuses"
+                        />
+
+                        <Service
+                            img="sauna.jpg"
+                            name_1="Infrared"
+                            name_2="Sauna"
+                            description="Our sauna sessions elevate well-being through relaxation and revitalization."
+                            urlTo="/sauna"
+                            id='sauna'
+                        />
+
+                        <Service
+                            img="nutrients.webp"
+                            name_1="Additional"
+                            name_2="Nutrients"
+                            description="Boost workouts with our nutrients, unstoppable energy for optimal training."
+                            urlTo="/nutrients"
+                            id="nutrients"
+                        />
+
+                        <Service
+                            img="stretching_area.jpg"
+                            name_1="Stretching"
+                            name_2="Area"
+                            description="A dedicated space for warming up is important for injury prevention."
+                            urlTo="/stretching-area"
+                            id="stretching"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            {/* End of services */}
+
+            {/* Start of begin today */}
+
+            <section
+                id="start-today"
+                className="wrapper"
+            >
+                <img
+                    src="/images/gym_picture.jpg"
+                    alt="Background"
+                    className="background-image"
+                />
+
+                <div className="content">
+                    <h2 className="section-heading uppercase">
+                        <span className="white">Don't </span>
+                        <span className="red">think</span>
+                        <span className="white">, start </span>
+                        <span className="red">today</span>
+                        <span className="white">!</span>
+                    </h2>
+
+                    <p className="dont-think white">
+                        Seize strength now! Become a member to start your fitness journey. No excuses, your results await.
+                    </p>
+
+                    <Link
+                        to='/pricing'
+                        rel="noreferrer noopener nofollow"
+                        className="red-btn-1 b-4 white uppercase"
+                    >
+                        Become a member
+                    </Link>
+                </div>
+            </section>
+
+            {/* End of begin today */}
+
+            {/* Start of why us */}
+
+            <section
+                id="why-us"
+                className="wrapper"
+            >
+                <div className="content">
+                    <h2 className="section-heading uppercase">
+                        <span className="white">Why </span>
+                        <span className="red">choose us</span>
+                        <span className="white">?</span>
+                    </h2>
+
+                    <p className="heading-text white uppercase">
+                        Read from our clients
+                    </p>
+
+                    <div className="review-grid">
+
+                    </div>
+                </div>
+            </section>
+        </section>
+    );
+}
+
+export default Home;
