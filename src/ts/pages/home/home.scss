@@ -84,6 +84,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    position: relative;
 }
 
 .service-img {
@@ -92,6 +93,13 @@
     aspect-ratio: 2.5 / 1;
     object-fit: cover;
     object-position: center 25%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.service-img#high_quality {
+    z-index: 2;
 }
 
 #sauna .service-img {
@@ -110,6 +118,7 @@
     font-size: 32px;
     letter-spacing: 0.7px;
     font-weight: 550;
+    margin-top: 150px;
 }
 
 .service-description {

@@ -1,5 +1,5 @@
 // Import packages
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Star, StarFill } from "react-bootstrap-icons";
 
@@ -21,17 +21,28 @@ const Home = () => {
         urlTo: string;
         img: string;
         id?: string;
+        suf: string;
     }
 
     const Service = (props: ServiceProps) => {
-        const { img, name_1, name_2, description, urlTo, id } = props;
+        const { img, name_1, name_2, description, urlTo, id, suf } = props;
+        const [ isImageLoaded, setIsImageLoaded ] = useState(false);
 
         return (
             <div className="service-container" id={id}>
                 <img
-                    src={`/images/services/${img}`}
+                    src={`/images/services/${img}_low.${suf}`}
                     alt="Service"
-                    className="service-img"
+                    className={`service-img ${isImageLoaded}`}
+                    id="low_quality"
+                />
+
+                <img
+                    src={`/images/services/${img}.${suf}`}
+                    alt="Service"
+                    className={`service-img ${isImageLoaded}`}
+                    loading="lazy"
+                    id="high_quality"
                 />
 
                 <span className="service-name">
@@ -180,54 +191,60 @@ const Home = () => {
 
                     <div className="home-service-grid">
                         <Service
-                            img="basic_fitness.png"
+                            img="basic_fitness"
                             name_1="Basic"
                             name_2="Fitness"
                             description="We cover everything you need in a gym, from treadmills and e-bikes to heavy weights."
                             urlTo="/basic-fitness"
+                            suf="jpg"
                         />
 
                         <Service
-                            img="personal_trainers.jpg"
+                            img="personal_trainers"
                             name_1="Personal"
                             name_2="Trainers"
                             description="Our professional coaches will help you reach your goals with a personalized program."
                             urlTo="/personal-trainers"
+                            suf="jpg"
                         />
 
                         <Service
-                            img="sport_masseuse.jpg"
+                            img="sport_masseuse"
                             name_1="Sport"
                             name_2="Masseuses"
                             description="Regular massages will help with blood flow, relieve muscle pain and tension."
                             urlTo="/sport-masseuses"
+                            suf="jpg"
                         />
 
                         <Service
-                            img="sauna.jpg"
+                            img="sauna"
                             name_1="Infrared"
                             name_2="Sauna"
                             description="Our sauna sessions elevate well-being through relaxation and revitalization."
                             urlTo="/sauna"
                             id='sauna'
+                            suf="jpg"
                         />
 
                         <Service
-                            img="nutrients.webp"
+                            img="nutrients"
                             name_1="Additional"
                             name_2="Nutrients"
                             description="Boost workouts with our nutrients, unstoppable energy for optimal training."
                             urlTo="/nutrients"
                             id="nutrients"
+                            suf="webp"
                         />
 
                         <Service
-                            img="stretching_area.jpg"
+                            img="stretching_area"
                             name_1="Stretching"
                             name_2="Area"
                             description="A dedicated space for warming up is important for injury prevention."
                             urlTo="/stretching-area"
                             id="stretching"
+                            suf="jpg"
                         />
                     </div>
                 </div>
