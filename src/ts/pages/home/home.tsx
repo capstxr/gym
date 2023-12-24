@@ -15,8 +15,8 @@ const Home = () => {
     // Service Component
 
     interface ServiceProps {
-        name_1?: string;
-        name_2?: string;
+        name_1: string;
+        name_2: string;
         description: string;
         urlTo: string;
         img: string;
@@ -61,13 +61,11 @@ const Home = () => {
                 />
 
                 <span className="service-name">
-                    <span className="gray-text">{name_1} </span>
+                    <span className="white">{name_1} </span>
 
-                    {name_2 && (
                     <span className="red">
                         {name_2}
                     </span>
-                    )}
                 </span>
 
                 <p className="service-description white">
@@ -196,7 +194,7 @@ const Home = () => {
             >
                 <div className="content">
                     <h2 className="section-heading uppercase">
-                        <span className="gray-text">What </span>
+                        <span className="white">What </span>
                         <span className="red">we offer</span>
                     </h2>
 
