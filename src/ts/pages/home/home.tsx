@@ -21,26 +21,41 @@ const Home = () => {
         urlTo: string;
         img: string;
         id?: string;
-        suf: string;
     }
 
     const Service = (props: ServiceProps) => {
-        const { img, name_1, name_2, description, urlTo, id, suf } = props;
+        const { img, name_1, name_2, description, urlTo, id } = props;
         const [ isImageLoaded, setIsImageLoaded ] = useState(false);
+        const [ isImageLoading, setIsImageLoading ] = useState(false);
+
+        const handleScroll = () => {
+            setIsImageLoaded(false);
+            setIsImageLoading(false);
+
+            if (window.scrollY > (window.innerHeight / 4)) {
+                setIsImageLoading(true);
+            }
+
+            if (window.scrollY > (window.innerHeight / 3)) {
+                setIsImageLoaded(true);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
 
         return (
             <div className="service-container" id={id}>
                 <img
-                    src={`/images/services/${img}_low.${suf}`}
+                    src={`/images/services/${img}_low.jpg`}
                     alt="Service"
                     className={`service-img ${isImageLoaded}`}
                     id="low_quality"
                 />
 
                 <img
-                    src={`/images/services/${img}.${suf}`}
+                    src={`/images/services/${img}.jpg`}
                     alt="Service"
-                    className={`service-img ${isImageLoaded}`}
+                    className={`service-img ${isImageLoading}`}
                     loading="lazy"
                     id="high_quality"
                 />
@@ -196,7 +211,6 @@ const Home = () => {
                             name_2="Fitness"
                             description="We cover everything you need in a gym, from treadmills and e-bikes to heavy weights."
                             urlTo="/basic-fitness"
-                            suf="jpg"
                         />
 
                         <Service
@@ -205,7 +219,6 @@ const Home = () => {
                             name_2="Trainers"
                             description="Our professional coaches will help you reach your goals with a personalized program."
                             urlTo="/personal-trainers"
-                            suf="jpg"
                         />
 
                         <Service
@@ -214,7 +227,6 @@ const Home = () => {
                             name_2="Masseuses"
                             description="Regular massages will help with blood flow, relieve muscle pain and tension."
                             urlTo="/sport-masseuses"
-                            suf="jpg"
                         />
 
                         <Service
@@ -224,7 +236,6 @@ const Home = () => {
                             description="Our sauna sessions elevate well-being through relaxation and revitalization."
                             urlTo="/sauna"
                             id='sauna'
-                            suf="jpg"
                         />
 
                         <Service
@@ -234,7 +245,6 @@ const Home = () => {
                             description="Boost workouts with our nutrients, unstoppable energy for optimal training."
                             urlTo="/nutrients"
                             id="nutrients"
-                            suf="webp"
                         />
 
                         <Service
@@ -244,7 +254,6 @@ const Home = () => {
                             description="A dedicated space for warming up is important for injury prevention."
                             urlTo="/stretching-area"
                             id="stretching"
-                            suf="jpg"
                         />
                     </div>
                 </div>
@@ -311,7 +320,7 @@ const Home = () => {
                             review="This gym stands out with state-of-the-art equipment and a spacious layout—a bodybuilder's dream. The commitment to serious strength training is impressive, delivering phenomenal gains. The place to be for muscle building."
                             name="Mike Oxlong"
                             occupation="bodybuilder"
-                            image="bodybuilder.jfif"
+                            image="bodybuilder.jpg"
                             stars={4}
                         />
 
@@ -319,7 +328,7 @@ const Home = () => {
                             review="This gym is my second home! The clean, vibrant atmosphere and specialized training programs have significantly improved my agility and endurance. Highly recommended for athletes seeking a dynamic and supportive space."
                             name="Matthew Perry"
                             occupation="footballer"
-                            image="matthew.webp"
+                            image="matthew.jpg"
                             stars={5}
                         />
 
@@ -327,7 +336,7 @@ const Home = () => {
                             review="As a personal trainer, I'm discerning about where I train. This gym exceeds expectations with a clean facility, professional staff, and flexibility. Highly recommended for comprehensive experiences."
                             name="R.U. Winningson"
                             occupation="personal trainer"
-                            image="sporty.jfif"
+                            image="sporty.jpg"
                             stars={5}
                         />
                     </div>

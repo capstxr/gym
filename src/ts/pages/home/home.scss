@@ -102,6 +102,14 @@
     z-index: 2;
 }
 
+.service-img.false#high_quality {
+    display: none;
+}
+
+.service-img.true#low_quality {
+    display: none;
+}
+
 #sauna .service-img {
     object-position: center 30%;
 }
@@ -271,6 +279,12 @@
     }
 }
 
+@media screen and (max-width: 1080px) {
+    .service-name {
+        margin-top: 130px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .home-service-grid {
         grid-template-columns: repeat(3, calc(33% - 10px));
@@ -325,6 +339,7 @@
     }
 
     .service-name {
+        margin-top: 120px;
         font-size: 20px;
     }
 
@@ -353,10 +368,17 @@
 
     .service-name {
         font-size: 24px;
+        margin-top: 175px;
     }
 
     .service-description {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .service-name {
+        margin-top: 165px;
     }
 }
 
@@ -378,6 +400,7 @@
     }
 
     .service-name {
+        margin-top: 150px;
         font-size: 22px;
     }
 
@@ -419,6 +442,10 @@
 
     .review-wrapper:first-child {
         display: flex;
+    }
+
+    .service-name {
+        margin-top: 145px;
     }
 }
 
@@ -475,6 +502,7 @@
 
     .service-name {
         font-size: 36px;
+        margin-top: 185px;
     }
 
     .service-description {
@@ -525,6 +553,7 @@
     }
 
     .service-name {
+        margin-top: 34vw;
         font-size: 25px;
     }
 
