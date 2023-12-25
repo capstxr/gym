@@ -439,7 +439,7 @@ const Home = () => {
                     </h2>
 
                     <span className="heading-text white uppercase">
-                        We train you to gain
+                        We help you gain
                     </span>
 
                     <div className="home-service-grid" id="trainer-grid">
@@ -451,7 +451,7 @@ const Home = () => {
 
                         <Trainer
                             image="trainer_2"
-                            name="Amanda"
+                            name="Emma"
                             specialiations="Crossfit, Nutrition"
                         />
 
@@ -466,18 +466,40 @@ const Home = () => {
 
             {/* End of our trainers */}
 
-            {/* Start of check our pricing */}
+            {/* Start of ready to change */}
 
             <section
-                id="pricing-box"
+                id="ready-wrapper"
                 className="wrapper"
             >
-                <div className="content">
+                <div className="content b-8">
+                    <div className="ready-left">
+                        <h2 className="ready-head uppercase white">
+                            Ready to change?
+                        </h2>
+                        
+                        <p className="ready-text white">
+                            Challenge your strength. Stretch your body. Breathe easy. Our team of world-class instructors will empower
+                        </p>
+                    </div>
 
+                    <div className="ready-right">
+                        <div className="ready-link b-8">
+                            <Link
+                                to='/pricing'
+                                rel="noreferrer noopener nofollow"
+                                className="r-l-link"
+                            >
+                                <p className="r-l-text uppercase">
+                                    Check out our plans
+                                </p>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            {/* End of check our pricing */}
+            {/* End of ready to change */}
         </section>
     );
 }
