@@ -176,6 +176,7 @@ const Footer = () => {
                             rel='noreferrer noopener nofollow'
                             className='footer-some'
                             target='_blank'
+                            aria-label='Instagram'
                         >
                             <Instagram
                                 className='social-icon'
@@ -188,6 +189,7 @@ const Footer = () => {
                             rel='noreferrer noopener nofollow'
                             className='footer-some'
                             target='_blank'
+                            aria-label='Twitter'
                         >
                             <Twitter
                                 className='social-icon'
@@ -200,6 +202,7 @@ const Footer = () => {
                             rel='noreferrer noopener nofollow'
                             className='footer-some'
                             target='_blank'
+                            aria-label='Youtube'
                         >
                             <Youtube
                                 className='social-icon'
@@ -212,6 +215,7 @@ const Footer = () => {
                             rel='noreferrer noopener nofollow'
                             className='footer-some'
                             target='_blank'
+                            aria-label='Facebook'
                         >
                             <Facebook
                                 className='social-icon'

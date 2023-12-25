@@ -156,6 +156,7 @@ const Home = () => {
                             target="_blank"
                             rel="noreferrer noopener nofollow"
                             className="trainer-some"
+                            aria-label='Instagram'
                         >
                             <Instagram
                                 className="t-some-icon"
@@ -168,6 +169,7 @@ const Home = () => {
                             target="_blank"
                             rel="noreferrer noopener nofollow"
                             className="trainer-some"
+                            aria-label='Facebook'
                         >
                             <Facebook
                                 className="t-some-icon"
@@ -180,6 +182,7 @@ const Home = () => {
                             target="_blank"
                             rel="noreferrer noopener nofollow"
                             className="trainer-some"
+                            aria-label='Twitter'
                         >
                             <Twitter
                                 className="t-some-icon"
