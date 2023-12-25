@@ -98,18 +98,6 @@
     z-index: 1;
 }
 
-.service-img#high_quality {
-    z-index: 2;
-}
-
-.service-img.false#high_quality {
-    display: none;
-}
-
-.service-img.true#low_quality {
-    display: none;
-}
-
 #sauna .service-img {
     object-position: center 30%;
 }

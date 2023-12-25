@@ -30,39 +30,14 @@ const Home = () => {
 
     const Service = (props: ServiceProps) => {
         const { img, name_1, name_2, description, urlTo, id } = props;
-        const [ isImageLoaded, setIsImageLoaded ] = useState(false);
-        const [ isImageLoading, setIsImageLoading ] = useState(false);
-
-        const handleScroll = () => {
-            setIsImageLoaded(false);
-            setIsImageLoading(false);
-
-            if (window.scrollY > (window.innerHeight / 4)) {
-                setIsImageLoading(true);
-            }
-
-            if (window.scrollY > (window.innerHeight / 3)) {
-                setIsImageLoaded(true);
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll);
 
         return (
             <div className="service-container" id={id}>
                 <img
-                    src={`/images/services/${img}_low.jpg`}
-                    alt="Service"
-                    className={`service-img ${isImageLoaded}`}
-                    id="low_quality"
-                />
-
-                <img
                     src={`/images/services/${img}.jpg`}
                     alt="Service"
-                    className={`service-img ${isImageLoading}`}
+                    className={`service-img`}
                     loading="lazy"
-                    id="high_quality"
                 />
 
                 <span className="service-name">
