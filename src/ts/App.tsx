@@ -4,6 +4,10 @@ https://www.figma.com/file/mAWQTv9Am31iwKNFVXOeC4/andre's-gym-(Community)?node-i
 
 https://www.figma.com/file/AgSJfOMJKoSFvWWm21REDV/Gym-Website-Design-(Community)?type=design&node-id=1-8&mode=design&t=tGvAxC7WXlp6UOkd-0
 
+https://www.figma.com/file/kmrBZlxZNMnn6ECaiNAvA0/Fitness%2FGym-Webflow-Website-Template-(Community)?node-id=0%3A1&mode=dev
+
+https://www.figma.com/file/QQSWk0B0GkPFTwsadepFu7/SPYRO-(Community)?node-id=0%3A1&mode=dev
+
 */
 
 // Import Public CSS

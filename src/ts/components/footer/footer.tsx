@@ -169,6 +169,57 @@ const Footer = () => {
                         info@powergym.com
                     </span>
 
+                    
+                    <div className="footer-socials">
+                        <a
+                            href="https://instagram.com"
+                            rel='noreferrer noopener nofollow'
+                            className='footer-some'
+                            target='_blank'
+                        >
+                            <Instagram
+                                className='social-icon'
+                                id='instagram'
+                            />
+                        </a>
+
+                        <a
+                            href="https://twitter.com"
+                            rel='noreferrer noopener nofollow'
+                            className='footer-some'
+                            target='_blank'
+                        >
+                            <Twitter
+                                className='social-icon'
+                                id='twitter'
+                            />
+                        </a>
+
+                        <a
+                            href="https://youtube.com"
+                            rel='noreferrer noopener nofollow'
+                            className='footer-some'
+                            target='_blank'
+                        >
+                            <Youtube
+                                className='social-icon'
+                                id='youtube'
+                            />
+                        </a>
+
+                        <a
+                            href="https://facebook.com"
+                            rel='noreferrer noopener nofollow'
+                            className='footer-some'
+                            target='_blank'
+                        >
+                            <Facebook
+                                className='social-icon'
+                                id='facebook'
+                            />
+                        </a>
+                    </div>
+
                     <span className="footer-link">
                         Manhattan, NY 10036, USA
                     </span>

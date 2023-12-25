@@ -252,7 +252,93 @@
     }
 }
 
+.trainer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
+.trainer-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.trainer-bottom {
+    padding: 20px;
+    background-color: #202020;
+    margin-top: -2px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trainer-name {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.trainer-line {
+    height: 1px;
+    background-color: #505050;
+    border: none;
+}
+
+.specialiations-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.specialiations-head {
+    font-size: 17px;
+    letter-spacing: 0.75px;
+    font-weight: 400;   
+}
+
+.specialiations-text {
+    font-size: 16px;
+    color: rgb(150,150,150);
+    letter-spacing: 0.45px;
+}
+
+.trainer-social-medias {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.trainer-some {
+    color: rgb(230,230,230);
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    transition: 0.25s;
+
+    &:hover {
+        transform: translateY(-2px);
+
+        #instagram {
+            color: var(--instagram);
+        }
+
+        #facebook {
+            color: var(--facebook);
+        }
+
+        #twitter {
+            color: var(--twitter);
+        }
+    }
+}
+
+.t-some-icon {
+    width: 100%;
+    height: 100%;
+    transition: 0.25s;
+}
 
 @media screen and (max-width: 1290px) {
     .service-name {
@@ -276,6 +362,18 @@
 
     .home-service-grid {
         grid-template-columns: repeat(3, calc(33% - 20px));
+    }
+
+    .trainer-name {
+        font-size: 20px;
+    }
+
+    .specialiations-head {
+        font-size: 16px;
+    }
+
+    .specialiations-text {
+        font-size: 15px;
     }
 }
 
@@ -374,11 +472,32 @@
     .service-description {
         font-size: 18px;
     }
+
+    #trainer-grid {
+        grid-template-columns: repeat(3, auto);
+    }
 }
 
 @media screen and (max-width: 900px) {
     .service-name {
         margin-top: 165px;
+    }
+
+    .trainer-name {
+        font-size: 18px;
+    }
+
+    .specialiations-head {
+        font-size: 15px;
+    }
+
+    .specialiations-text {
+        font-size: 14px;
+    }
+
+    .trainer-some {
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -420,6 +539,27 @@
 
     .review-wrapper:first-child {
         display: none;
+    }
+
+    .trainer-bottom {
+        gap: 10px;
+    }
+
+    .trainer-name {
+        font-size: 16px;
+    }
+
+    .specialiations-head {
+        font-size: 14px;
+    }
+
+    .specialiations-text {
+        font-size: 13px;
+    }
+
+    .trainer-social-medias {
+        margin-top: 12px;
+        gap: 12px;
     }
 }
 
@@ -513,6 +653,12 @@
     #start-today .section-heading {
         font-size: 38px;
     }
+
+    #trainer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, calc(33% - 5px));
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -522,6 +668,29 @@
 
     .landing-head {
         font-size: 42px;
+    }
+
+    #trainer-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .trainer-wrapper {
+        flex-direction: row;
+    }
+
+    .trainer-image {
+        width: 50%;
+        aspect-ratio: 1.5 / 1;
+    }
+
+    .trainer-bottom {
+        width: 50%;
+    }
+
+    .trainer-social-medias {
+        gap: 20px;
     }
 }
 
@@ -576,6 +745,33 @@
         width: 100%;
         font-size: 16px;
         line-height: 22px;
+    }
+
+    .trainer-image {
+        aspect-ratio: 2 / 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .trainer-wrapper {
+        flex-direction: column;
+    }
+    
+    .trainer-image {
+        width: 100%;
+        aspect-ratio: 2 / 1;
+        object-position: center 30%;
+    }
+
+    .trainer-bottom {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .trainer-image {
+        aspect-ratio: 1.25 / 1;
+        object-position: center 40%;
     }
 }
 
@@ -654,5 +850,11 @@
     .dont-think {
         font-size: 15px;
         line-height: 20px;
+    }
+
+    .trainer-image {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-position: center;
     }
 }

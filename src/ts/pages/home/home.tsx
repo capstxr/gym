@@ -1,7 +1,13 @@
 // Import packages
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Star, StarFill } from "react-bootstrap-icons";
+import {
+    Star,
+    StarFill,
+    Twitter,
+    Facebook,
+    Instagram
+} from "react-bootstrap-icons";
 
 // Import CSS
 import './home.scss'
@@ -13,7 +19,6 @@ const Home = () => {
     }, []);
 
     // Service Component
-
     interface ServiceProps {
         name_1: string;
         name_2: string;
@@ -82,11 +87,9 @@ const Home = () => {
             </div>
         );
     }
-
     // End of service component
 
     // Start of review component
-
     interface ReviewProps {
         review: string;
         name: string;
@@ -132,8 +135,88 @@ const Home = () => {
             </div>
         );
     }
-
     // End of review component
+
+    // Trainer component
+    interface TrainerProps {
+        image: string;
+        name: string;
+        specialiations: string;
+    }
+
+    const Trainer = (props: TrainerProps) => {
+        // Initialize props
+        const { image, name, specialiations } = props;
+
+        // Return component HTML
+        return (
+            <div className="trainer-wrapper">
+                <img
+                    src={`/images/trainers/${image}.jpg`}
+                    alt={name}
+                    className="trainer-image"
+                    loading="lazy"
+                />
+
+                <div className="trainer-bottom">
+                    <span className="trainer-name white">
+                        {name}
+                    </span>
+
+                    <hr className="trainer-line" />
+
+                    <div className="specialiations-grid">
+                        <span className="specialiations-head white">
+                            Specialiations
+                        </span>
+
+                        <span className="specialiations-text">
+                            {specialiations}
+                        </span>
+                    </div>
+
+                    <div className="trainer-social-medias">
+                        <a 
+                            href="https://instagram.com"
+                            target="_blank"
+                            rel="noreferrer noopener nofollow"
+                            className="trainer-some"
+                        >
+                            <Instagram
+                                className="t-some-icon"
+                                id="instagram"
+                            />
+                        </a>
+
+                        <a 
+                            href="https://facebook.com"
+                            target="_blank"
+                            rel="noreferrer noopener nofollow"
+                            className="trainer-some"
+                        >
+                            <Facebook
+                                className="t-some-icon"
+                                id="facebook"
+                            />
+                        </a>
+
+                        <a 
+                            href="https://twitter.com"
+                            target="_blank"
+                            rel="noreferrer noopener nofollow"
+                            className="trainer-some"
+                        >
+                            <Twitter
+                                className="t-some-icon"
+                                id="twitter"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    // End of trainer component
 
     return (
         <section
@@ -342,6 +425,46 @@ const Home = () => {
             </section>
 
             {/* End of why us */}
+
+            {/* Start of our trainers */}
+
+            <section
+                id="home-trainers"
+                className="wrapper"
+            >
+                <div className="content">
+                    <h2 className="section-heading uppercase">
+                        <span className="white">Our </span>
+                        <span className="red">trainers</span>
+                    </h2>
+
+                    <span className="heading-text white uppercase">
+                        We train you to gain
+                    </span>
+
+                    <div className="home-service-grid" id="trainer-grid">
+                        <Trainer
+                            image="trainer_1"
+                            name="Amanda"
+                            specialiations="Crossfit, Nutrition"
+                        />
+
+                        <Trainer
+                            image="trainer_2"
+                            name="Amanda"
+                            specialiations="Crossfit, Nutrition"
+                        />
+
+                        <Trainer
+                            image="trainer_3"
+                            name="Joshua Franklin"
+                            specialiations="Crossfit, Nutrition"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            {/* End of our trainers */}
 
             {/* Start of check our pricing */}
 

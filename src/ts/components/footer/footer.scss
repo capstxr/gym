@@ -41,6 +41,50 @@
     width: 300px;
 }
 
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-some {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+
+    &:hover {
+        transform: translateY(-2px);
+
+        #facebook {
+            color: var(--facebook);
+        }
+
+        #instagram {
+            color: var(--instagram);
+        }
+        
+        #twitter {
+            color: var(--twitter);
+        }
+
+        #youtube {
+            color: var(--youtube);
+        }
+    }
+}
+
+.social-icon {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    color: rgb(220,220,220);
+    transition: 0.25s;
+}
+
 @media screen and (max-width: 1000px) {
     #footer .content {
         display: grid;

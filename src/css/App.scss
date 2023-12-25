@@ -195,6 +195,18 @@ html {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .wrapper .content {
+        max-width: 620px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .wrapper .content {
+        max-width: 580px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .wrapper .content {
         max-width: 90vw;
