@@ -211,7 +211,6 @@ const Home = () => {
                     src="/images/home-landing-bg.jpg"
                     alt="Gym Background"
                     className="landing-bg"
-                    loading="lazy"
                 />
 
                 <div
