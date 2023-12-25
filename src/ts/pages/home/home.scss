@@ -590,6 +590,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    #home-landing {
+        margin-top: 64px;
+    }
+
     #h-l-content {
         gap: 30px;
     }
