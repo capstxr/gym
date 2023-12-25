@@ -592,6 +592,7 @@
 @media screen and (max-width: 768px) {
     #home-landing {
         margin-top: 64px;
+        height: calc(100vh - 64px);
     }
 
     #h-l-content {
@@ -691,6 +692,8 @@
 
     .trainer-bottom {
         width: 50%;
+        margin-top: 0;
+        margin-left: -2px;
     }
 
     .trainer-social-medias {
