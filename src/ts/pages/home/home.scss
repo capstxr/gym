@@ -752,29 +752,6 @@
     }
 }
 
-@media screen and (max-width: 450px) {
-    .trainer-wrapper {
-        flex-direction: column;
-    }
-    
-    .trainer-image {
-        width: 100%;
-        aspect-ratio: 2 / 1;
-        object-position: center 30%;
-    }
-
-    .trainer-bottom {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .trainer-image {
-        aspect-ratio: 1.25 / 1;
-        object-position: center 40%;
-    }
-}
-
 @media screen and (max-width: 350px) {
     .landing-head {
         font-size: 34px;
@@ -856,5 +833,21 @@
         width: 100%;
         aspect-ratio: 1 / 1;
         object-position: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .trainer-wrapper {
+        flex-direction: column;
+    }
+    
+    .trainer-image {
+        width: 100%;
+        aspect-ratio: 1.25 / 1;
+        object-position: center 40%;
+    }
+
+    .trainer-bottom {
+        width: 100%;
     }
 }
