@@ -16,6 +16,10 @@ body {
     background-color: #181818;
 }
 
+body.true {
+    position: fixed;
+}
+
 html {
     scroll-behavior: smooth;
 }

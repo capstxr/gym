@@ -1,14 +1,22 @@
 // Import packages
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 // Import component css
 import './header.scss';
 
 const Header = () => {
+    const [ isOpen, setIsOpen ] = useState(false);
+
+    const HamburgerClick = () => {
+        setIsOpen(!isOpen);
+        document.body.className = `${!isOpen}`
+    }
+
     return (
         <header
             id="header"
-            className="wrapper"
+            className={`wrapper ${isOpen}`}
         >
             <nav
                 className="content"
@@ -94,6 +102,15 @@ const Header = () => {
                         </Link>
                     </li>
                 </ul>
+
+                <div
+                    className="hamburger-container"
+                    onClick={HamburgerClick}
+                >
+                    <span />
+                    <span />
+                    <span />
+                </div>
             </nav>
         </header>
     );
