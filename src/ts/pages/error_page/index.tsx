@@ -35,8 +35,10 @@ const ErrorPage = () => {
                     </h2>
 
                     <div className="not-found-container">
-                        <h2 className="not-found-text white uppercase">
-                            Page not found!
+                        <h2 className="not-found-text uppercase">
+                            <span className='white'>Page </span>
+                            <span className="red">not </span>
+                            <span className="white">found!</span>
                         </h2>
 
                         <span className="not-found-small white">
