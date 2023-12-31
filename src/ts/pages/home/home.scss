@@ -918,6 +918,21 @@
     }
 }
 
+@media screen and (max-width: 375px) {
+    .trainer-wrapper {
+        flex-direction: row;
+    }
+
+    .trainer-image {
+        width: 50%;
+    }
+
+    .trainer-bottom {
+        width: 50%;
+        margin-top: 0;
+    }
+}
+
 @media screen and (max-width: 350px) {
     .landing-head {
         font-size: 34px;
@@ -996,24 +1011,10 @@
     }
 
     .trainer-image {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        object-position: center;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .trainer-wrapper {
-        flex-direction: column;
-    }
-    
-    .trainer-image {
-        width: 100%;
-        aspect-ratio: 1.25 / 1;
-        object-position: center 40%;
+        width: 35%;
     }
 
     .trainer-bottom {
-        width: 100%;
+        width: 65%;
     }
 }

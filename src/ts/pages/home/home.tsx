@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap-icons";
 
 // Import CSS
-import './home.scss'
+import './home.scss';
 
 const Home = () => {
     useEffect(() => {
