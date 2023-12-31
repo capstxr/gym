@@ -1,7 +1,6 @@
 #home-landing {
     width: 100vw;
     height: calc(100vh - 80px);
-    margin-top: 80px;
     position: relative;
     background-color: #000;
 }
@@ -240,69 +239,6 @@
     }
 }
 
-#ready-wrapper {
-    width: calc(100vw - 80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    padding: 20px;
-
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--red-3);
-        padding: 30px 50px;
-        transform: skew(-20deg);
-    }
-}
-
-.ready-left {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    transform: skew(20deg);
-}
-
-.ready-head {
-    font-size: 32px;
-    letter-spacing: 4.5px;
-    font-weight: 550;
-    line-height: 28px;
-}
-
-.ready-text {
-    font-size: 18px;
-    width: 550px;
-    letter-spacing: 0.5px;
-    font-weight: 450;
-}
-
-.ready-right {
-    transform: skew(20deg);
-}
-
-.ready-link {
-    padding: 8px 24px;
-    border: 2px solid #fff;
-    transform: skew(-20deg);
-}
-
-.r-l-link {
-    text-decoration: none;
-}
-
-.r-l-text {
-    transform: skew(20deg);
-    color: #fff;
-    border: none;
-    font-size: 18px;
-    letter-spacing: 0.75px;
-    font-weight: 450;
-}
-
 @media screen and (max-width: 1290px) {
     .service-name {
         font-size: 28px;
@@ -331,10 +267,6 @@
 @media screen and (max-width: 1080px) {
     .service-name {
         margin-top: 130px;
-    }
-
-    .ready-text {
-        width: 480px;
     }
 }
 
@@ -399,16 +331,6 @@
     .service-description {
         font-size: 16px;
     }
-
-    .ready-head {
-        font-size: 28px;
-        line-height: 22px;
-    }
-
-    .ready-text {
-        width: 400px;
-        font-size: 16px;
-    }
 }
 
 @media screen and (max-width: 930px) {
@@ -442,16 +364,6 @@
 @media screen and (max-width: 900px) {
     .service-name {
         margin-top: 165px;
-    }
-
-    #ready-wrapper .content {
-        padding: 25px 40px;
-    }
-}
-
-@media screen and (max-width: 875px) {
-    .ready-text {
-        width: 350px;
     }
 }
 
@@ -496,39 +408,10 @@
     }
 }
 
-@media screen and (max-width: 835px) {
-    .ready-left {
-        gap: 10px;
-    }
-
-    .ready-head {
-        font-size: 24px;
-        line-height: 20px;
-    }
-
-    .ready-text {
-        font-size: 14px;
-    }
-
-    .ready-link {
-        padding: 6px 18px;
-    }
-
-    .r-l-text {
-        font-size: 16px;
-    }
-}
-
 @media screen and (max-width: 810px) {
     #review-grid {
         justify-content: center;
         gap: 20px;
-    }
-}
-
-@media screen and (max-width: 790px) {
-    .ready-text {
-        width: 300px;
     }
 }
 
@@ -553,7 +436,6 @@
 
 @media screen and (max-width: 768px) {
     #home-landing {
-        margin-top: 48px;
         height: calc(100vh - 48px);
     }
 
@@ -588,24 +470,6 @@
 
     .service-description {
         font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    #ready-wrapper .content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .ready-head {
-        text-align: center;
-    }
-
-    .ready-text {
-        width: 100%;
-        text-align: center;
     }
 }
 
@@ -647,38 +511,6 @@
 
     .landing-head {
         font-size: 42px;
-    }
-
-    #ready-wrapper {
-        width: 100%;
-        margin-left: 0;
-
-        .content {
-            transform: skew(0);
-            padding: 20px;
-        }
-    }
-
-    .ready-left, .ready-right {
-        transform: skew(0);
-        width: 100%;
-    }
-
-    .ready-head {
-        line-height: 30px;
-    }
-
-    .ready-link {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .r-l-link {
-        width: 100%;
-        transform: skew(0);
     }
 }
 
@@ -733,12 +565,6 @@
         width: 100%;
         font-size: 16px;
         line-height: 22px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .r-l-text {
-        font-size: 14px;
     }
 }
 

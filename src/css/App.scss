@@ -28,6 +28,12 @@ html {
 
 // Commonly used classes
 
+.center-full-width {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -42,6 +48,10 @@ html {
 
 .b-40 {
     border-radius: 40px;
+}
+
+.p-25-0 {
+    padding: 25px 0 0 0;
 }
 
 .red-btn-1 {
@@ -118,6 +128,10 @@ html {
     display: flex;
     flex-direction: column;
     gap: 50px;
+
+    & > section:first-of-type {
+        margin-top: 80px;
+    }
 }
 
 .wrapper {
@@ -190,6 +204,10 @@ html {
     .red-btn-2 {
         font-size: 14px;
     }
+    
+    .page > section:first-of-type {
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 740px) {
@@ -247,6 +265,4 @@ html {
     .red-btn-2 {
         font-size: 14px;
     }
-
-
 }

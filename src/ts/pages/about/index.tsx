@@ -1,6 +1,10 @@
 // Import Packages
 import { useEffect } from 'react';
 
+// Import Components
+import CheckPlans from '../../components/body/check_plans';
+import Trainers from '../../components/body/trainers';
+
 // Import CSS
 import './about.scss';
 
@@ -11,7 +15,16 @@ const About = () => {
     }, []);
 
     return (
-        <h1>Hello, World</h1>
+        <section
+            className="page"
+            id="about"
+        >
+            {/* Our trainers */}
+            <Trainers/>
+
+            {/* Check out our plans */}
+            <CheckPlans/>
+        </section>
     );
 }
 

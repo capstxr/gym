@@ -5,6 +5,8 @@ import {
     Twitter
 } from 'react-bootstrap-icons';
 
+import { Link } from 'react-router-dom';
+
 // Import css
 import './trainers.scss';
 
@@ -124,6 +126,16 @@ const Trainers = () => {
                         name="Joshua"
                         specialiations="Crossfit, Nutrition"
                     />
+                </div>
+
+                <div className="center-full-width p-25-0">
+                    <Link
+                        to="/personal-trainers"
+                        rel='noreferrer noopener nofollow'
+                        className='red-btn-1 white b-4'
+                    >
+                        Read more
+                    </Link>
                 </div>
             </div>
         </section>
