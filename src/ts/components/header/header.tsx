@@ -28,6 +28,7 @@ const Header = () => {
                             to="/"
                             rel='noreferrer noopener nfollow'
                             className='logo-link'
+                            onClick={HamburgerClick}
                         >
                             <img
                                 src=""
@@ -44,6 +45,7 @@ const Header = () => {
                             to="/"
                             rel='noreferrer noopener nfollow'
                             className='nav-link'
+                            onClick={HamburgerClick}
                         >
                             Home
                         </Link>
@@ -55,6 +57,7 @@ const Header = () => {
                             to="/about"
                             rel='noreferrer noopener nfollow'
                             className='nav-link'
+                            onClick={HamburgerClick}
                         >
                             About
                         </Link>
@@ -65,6 +68,7 @@ const Header = () => {
                             to="/services"
                             rel='noreferrer noopener nfollow'
                             className='nav-link'
+                            onClick={HamburgerClick}
                         >
                             Services
                         </Link>
@@ -75,6 +79,7 @@ const Header = () => {
                             to="/pricing"
                             rel='noreferrer noopener nfollow'
                             className='nav-link'
+                            onClick={HamburgerClick}
                         >
                             Pricing
                         </Link>
@@ -85,6 +90,7 @@ const Header = () => {
                             to="/contact"
                             rel='noreferrer noopener nfollow'
                             className='nav-link'
+                            onClick={HamburgerClick}
                         >
                             Contact
                         </Link>
@@ -97,6 +103,7 @@ const Header = () => {
                             to="/store"
                             rel='noreferrer noopener nfollow'
                             className='nav-link'
+                            onClick={HamburgerClick}
                         >
                             store
                         </Link>
