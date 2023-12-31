@@ -18,12 +18,13 @@ import '../css/colors.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import Components
-import CookiePopup from './components/cookies/cookies';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
+import CookiePopup from './components/cookies';
+import Header from './components/header';
+import Footer from './components/footer';
 
 // Import Pages
-import Home from './pages/home/home';
+import Home from './pages/home';
+import About from './pages/about';
 
 function App() {
     /*
@@ -43,6 +44,11 @@ function App() {
                 <Route
                     path='/'
                     element={<Home/>}
+                />
+
+                <Route
+                    path='/about'
+                    element={<About/>}
                 />
             </Routes>
 
