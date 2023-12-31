@@ -434,7 +434,7 @@ const Home = () => {
 
                         <Trainer
                             image="trainer_3"
-                            name="Joshua Franklin"
+                            name="Joshua"
                             specialiations="Crossfit, Nutrition"
                         />
                     </div>
