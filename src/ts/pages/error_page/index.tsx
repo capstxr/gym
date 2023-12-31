@@ -1,10 +1,16 @@
 // Import Modules
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 // Import CSS
 import './error.scss';
 
 const ErrorPage = () => {
+    useEffect(() => {
+        document.title = "Power Gym | Error Page";
+        window.scrollTo(0,0);
+    }, []);
+
     return (
         <section
             className="page"
