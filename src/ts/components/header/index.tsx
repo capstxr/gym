@@ -22,19 +22,23 @@ const Header = () => {
                 className="content"
                 id="nav"
             >
-                <ul className="nav-list">
-                    <li className="nav-item">
+                <ul className="nav-list" id='logo-list'>
+                    <li className="nav-item" id='logo-item'>
                         <Link 
                             to="/"
                             rel='noreferrer noopener nfollow'
                             className='logo-link'
                             onClick={HamburgerClick}
                         >
-                            <img
-                                src=""
-                                alt="Logo"
-                                className="header-logo"
-                            />
+                            <div className="logo-container">
+                                <img
+                                    src="/images/favicon.svg"
+                                    alt="Logo"
+                                    className="header-logo"
+                                />
+
+                                <span>Power Gym</span>
+                            </div>   
                         </Link>
                     </li>
                 </ul>
