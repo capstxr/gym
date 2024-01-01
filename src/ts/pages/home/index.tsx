@@ -117,7 +117,7 @@ const Home = () => {
     // End of review component
 
     return (
-        <section
+        <main
             className="page"
             id="home"
         >
@@ -334,7 +334,7 @@ const Home = () => {
             <CheckPlans/>
 
             {/* End of ready to change */}
-        </section>
+        </main>
     );
 }
 

@@ -12,7 +12,7 @@ const ErrorPage = () => {
     }, []);
 
     return (
-        <section
+        <main
             className="page"
             id="error"
         >
@@ -61,7 +61,7 @@ const ErrorPage = () => {
                     </div>
                 </div>
             </section>
-        </section>
+        </main>
     );
 }
 
