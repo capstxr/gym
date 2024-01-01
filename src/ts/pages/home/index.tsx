@@ -128,9 +128,10 @@ const Home = () => {
                 id="home-landing"
             >
                 <img
-                    src="/images/home-landing-bg.jpg"
+                    src="/images/bodybuilder_bg.jpg"
                     alt="Gym Background"
                     className="landing-bg"
+                    id="home-bg"
                 />
 
                 <div

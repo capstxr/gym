@@ -16,6 +16,12 @@
     opacity: 0.5;
 }
 
+#home-bg {
+    object-position: center 10%;
+    filter: grayscale(0);
+    opacity: 0.7;
+}
+
 #h-l-content {
     position: absolute;
     z-index: 1;
@@ -23,7 +29,7 @@
     flex-direction: column;
     gap: 45px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
     height: 100%;
 
@@ -36,17 +42,17 @@
     text-transform: uppercase;
     font-style: italic;
     color: #fff;
-    font-size: 36px;
+    font-size: 30px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.75);
     letter-spacing: 3px;
 
     .s-large {
-        font-size: 46px;
+        font-size: 38px;
     }
 }
 
 .landing-head {
-    font-size: 68px;
+    font-size: 56px;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 25px;
@@ -55,8 +61,8 @@
 
 .landing-text {
     font-size: 22px;
-    width: 600px !important;
-    text-align: center;
+    width: 650px !important;
+    text-align: start;
     font-weight: 500;
     letter-spacing: 0.8px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -131,9 +137,10 @@
     background-color: #000;
 
     .background-image {
-        object-position: center 65%;
-        opacity: 0.3;
+        object-position: center 75%;
+        opacity: 0.5;
         z-index: 0;
+        filter: grayscale(1);
     }
 
     .content {
@@ -147,8 +154,10 @@
         gap: 25px;
 
         .section-heading {
-            line-height: 25px;
+            line-height: 52px;
             text-shadow: 4px 4px 5px rgba(0,0,0,0.75);
+            text-align: center;
+            margin: 0;
         }
     }
 }
@@ -156,11 +165,11 @@
 .dont-think {
     font-size: 20px;
     text-align: center;
-    width: 580px;
     font-weight: 500;
     letter-spacing: 1px;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
     margin-bottom: 10px;
+    width: 600px;
 }
 
 .review-wrapper {
@@ -395,6 +404,7 @@
 
     .dont-think {
         font-size: 18px;
+        width: auto;
     }
 
     #review-grid {
@@ -515,6 +525,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    #h-l-content {
+        align-items: center;
+    }
+
     .slogan {
         width: 100% !important;
         text-align: center;
@@ -530,6 +544,7 @@
     .landing-text {
         width: 100% !important;
         margin-top: -10px;
+        text-align: center;
         line-height: 24px;
     }
 

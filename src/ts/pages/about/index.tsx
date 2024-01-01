@@ -32,7 +32,7 @@ const About = () => {
 
                 <div className="content">
                     <h2 className="about-hero-text">
-                        <span className="white">Start </span>
+                        <span className="white">Start the </span>
                         <span className="red">body </span>
                         <span className="white">and </span>
                         <span className="red">mind cleansing </span>
