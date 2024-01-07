@@ -62,6 +62,21 @@ const About = () => {
             </section>
             {/* end of images */}
 
+            <section className="wrapper">
+                <div className="content">
+                    <h2
+                        className="section-heading uppercase"
+                    >
+                        <span className="white">About </span>
+                        <span className="red">us</span>
+                    </h2>
+
+                    <span className="heading-text white uppercase">
+                        Get to know our business
+                    </span>
+                </div>
+            </section>
+
             {/* Our story */}
             <section
                 id="story" 
