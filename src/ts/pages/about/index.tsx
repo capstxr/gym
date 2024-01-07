@@ -25,7 +25,7 @@ const About = () => {
                 className="wrapper"
             >
                 <img
-                    src="/images/home-landing-bg.jpg"
+                    src="/images/body/home/home-landing-bg.jpg"
                     alt="Gym background"
                     className="landing-bg"
                 />
@@ -48,13 +48,13 @@ const About = () => {
             >
                 <div className="content">
                     <img
-                        src="/images/about/gym_1.jpg"
+                        src="/images/body/about/gym_1.jpg"
                         alt="Working out"
                         className='intro-img'
                     />
 
                     <img
-                        src="/images/about/gym_2.jpg"
+                        src="/images/body/about/gym_2.jpg"
                         alt="Working out"
                         className='intro-img'
                     />
@@ -118,7 +118,7 @@ const About = () => {
                                 </div>
 
                                 <img
-                                    src="/images/work_out.jpg"
+                                    src="/images/body/about/work_out.jpg"
                                     alt="Working out"
                                     className="s-l-img"
                                 />
@@ -127,7 +127,7 @@ const About = () => {
 
                         <div className="s-side-bottom" id='mi'>
                             <img
-                                src="/images/pt.png"
+                                src="/images/body/about/pt.jpg"
                                 alt="Trainer"
                                 className="background-image"
                                 id='mission-img'
@@ -135,7 +135,7 @@ const About = () => {
 
                             <div className="mission-content">
                                 <h3 className='idk white'>
-                                    Our mission
+                                    Our Mission
                                 </h3>
 
                                 <p className='idk-p white'>

@@ -18,7 +18,7 @@ import './home.scss';
 
 const Home = () => {
     useEffect(() => {
-        document.title = "Power Gym | Home";
+        document.title = "Power Gym - Home";
         window.scrollTo(0,0);
     }, []);
 
@@ -128,7 +128,7 @@ const Home = () => {
                 id="home-landing"
             >
                 <img
-                    src="/images/home-landing-bg.jpg"
+                    src="/images/body/home/home-landing-bg.jpg"
                     alt="Gym Background"
                     className="landing-bg"
                     id="home-bg"
@@ -258,7 +258,7 @@ const Home = () => {
                 className="wrapper"
             >
                 <img
-                    src="/images/gym_picture.jpg"
+                    src="/images/body/home/gym_picture.jpg"
                     alt="Background"
                     className="background-image"
                 />

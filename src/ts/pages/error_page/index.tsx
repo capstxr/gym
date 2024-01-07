@@ -21,7 +21,7 @@ const ErrorPage = () => {
                 id="error-wrapper"
             >
                 <img
-                    src="/images/home-landing-bg.jpg"
+                    src="/images/body/home/home-landing-bg.jpg"
                     alt=""
                     className="landing-bg"
                 />
@@ -33,7 +33,7 @@ const ErrorPage = () => {
                     <h2 className="not-found-head white">
                         <span>4</span>
                         <img
-                            src="/images/plate.png"
+                            src="/images/plate.webp"
                             alt=""
                             className="not-found-plate"
                         />
