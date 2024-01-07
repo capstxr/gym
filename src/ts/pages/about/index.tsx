@@ -51,12 +51,14 @@ const About = () => {
                         src="/images/body/about/gym_1.jpg"
                         alt="Working out"
                         className='intro-img'
+                        loading='lazy'
                     />
 
                     <img
                         src="/images/body/about/gym_2.jpg"
                         alt="Working out"
                         className='intro-img'
+                        loading='lazy'
                     />
                 </div>
             </section>
@@ -121,6 +123,7 @@ const About = () => {
                                     src="/images/body/about/work_out.jpg"
                                     alt="Working out"
                                     className="s-l-img"
+                                    loading='lazy'
                                 />
                             </div>
                         </div>
@@ -131,6 +134,7 @@ const About = () => {
                                 alt="Trainer"
                                 className="background-image"
                                 id='mission-img'
+                                loading='lazy'
                             />
 
                             <div className="mission-content">
