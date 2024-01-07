@@ -13,7 +13,7 @@
     object-fit: cover;
     object-position: center 75%;
     filter: grayscale(1);
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 #home-bg {
@@ -29,7 +29,7 @@
     flex-direction: column;
     gap: 45px;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     width: 100%;
     height: 100%;
 
@@ -62,7 +62,7 @@
 .landing-text {
     font-size: 22px;
     width: 650px !important;
-    text-align: start;
+    text-align: center;
     font-weight: 500;
     letter-spacing: 0.8px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -71,7 +71,7 @@
 .home-service-grid {
     width: 100%;
     display: grid;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     grid-template-columns: repeat(3,calc(33% - 50px));
     row-gap: 50px;

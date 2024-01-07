@@ -98,6 +98,17 @@ const Trainers = () => {
             id="home-trainers"
             className="wrapper"
         >
+            <div className="head-bg">
+                <span>T</span>
+                <span>r</span>
+                <span>a</span>
+                <span>i</span>
+                <span>n</span>
+                <span>e</span>
+                <span>r</span>
+                <span>s</span>
+            </div>
+
             <div className="content">
                 <h2 className="section-heading uppercase">
                     <span className="white">Our </span>

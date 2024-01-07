@@ -128,7 +128,7 @@ const Home = () => {
                 id="home-landing"
             >
                 <img
-                    src="/images/bodybuilder_bg.jpg"
+                    src="/images/home-landing-bg.jpg"
                     alt="Gym Background"
                     className="landing-bg"
                     id="home-bg"
@@ -173,6 +173,17 @@ const Home = () => {
                 id="home-services"
                 className="wrapper"
             >
+                <div className="head-bg">
+                    <span>F</span>
+                    <span>e</span>
+                    <span>a</span>
+                    <span>t</span>
+                    <span>u</span>
+                    <span>r</span>
+                    <span>e</span>
+                    <span>s</span>
+                </div>
+
                 <div className="content">
                     <h2 className="section-heading uppercase">
                         <span className="white">What </span>
@@ -283,6 +294,16 @@ const Home = () => {
                 id="why-us"
                 className="wrapper"
             >
+                <div className="head-bg end">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>v</span>
+                    <span>i</span>
+                    <span>e</span>
+                    <span>w</span>
+                    <span>s</span>
+                </div>
+
                 <div className="content">
                     <h2 className="section-heading uppercase">
                         <span className="white">Why </span>

@@ -21,7 +21,7 @@
     font-size: 36px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
     letter-spacing: 3px;
-    width: 500px;
+    width: 550px;
     margin-top: -60px;
     text-align: center;
 }
@@ -54,6 +54,92 @@
     object-fit: cover;
 }
 
+// Our story
+.story-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "si mi"
+    "so mi"
+    "so ov";
+    gap: 24px;
+}
+
+#si {
+    grid-area: si;
+}
+
+#so {
+    grid-area: so;
+}
+
+#mi {
+    grid-area: mi;
+    position: relative;
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    background-color: rgba(82, 79, 245,0.5);
+}
+
+#ov {
+    grid-area: ov;
+}
+
+.value-box {
+    padding: 24px;
+    background: #A1F65E;
+}
+
+.story-side {
+    display: grid;
+    gap: 24px;
+    height: 100%;
+    width: 100%;
+}
+
+.story-head {
+    text-align: start;
+}
+
+.story-heading {
+    justify-content: start;
+}
+
+.story-short {
+    color: #e6e6e6;
+}
+
+.idk {
+    font-size: 24px;
+    letter-spacing: 0.75px;
+    font-weight: 550;
+}
+
+.idk-p {
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    line-height: 145%;
+    margin-top: 10px;
+}
+
+.story-long {
+    background-color: #e6e6e6;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+// Other
 @media screen and (max-width: 1280px) {
     #about-hero {
         height: 55vh;
