@@ -1,9 +1,13 @@
 // Import Packages
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 // Import Components
 import CheckPlans from '../../components/body/check_plans';
 import Trainers from '../../components/body/trainers';
+
+// Import icons
+import { IoPlay } from "react-icons/io5";
+import { IoPause } from "react-icons/io5";
 
 // Import CSS
 import './about.scss';
@@ -13,6 +17,21 @@ const About = () => {
         document.title = "Power Gym - About Us";
         window.scrollTo(0,0);
     }, []);
+
+    const [ isPlaying, setIsPlaying ] = useState<boolean>(false);
+
+    const vidRef = useRef<HTMLVideoElement | null>(null);
+
+    const handlePlayVideo = () => {
+        if (vidRef.current) {
+            if (!isPlaying)
+                vidRef.current.play();
+            else
+                vidRef.current.pause();
+            
+            setIsPlaying(!isPlaying);
+        }
+    }
 
     return (
         <main
@@ -155,6 +174,51 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Our facilities */}
+            <section id="facilities" className="wrapper">
+                <video
+                    poster='/images/body/about/facility_poster.png'
+                    id='facility-video'
+                    muted
+                    src='/images/body/about/test.mp4'
+                    preload='none'
+                    ref={vidRef}
+                    loop
+                />
+
+                <div className="content">
+                    <h3 id='facility-bg-head'>
+                        <span>O</span>
+                        <span>u</span>
+                        <span>r</span>
+                        <span></span>
+                        <span>f</span>
+                        <span>a</span>
+                        <span>c</span>
+                        <span>i</span>
+                        <span>l</span>
+                        <span>i</span>
+                        <span>t</span>
+                        <span>i</span>
+                        <span>e</span>
+                        <span>s</span>
+                    </h3>
+
+                    <button
+                        className="play-btn"
+                        onClick={handlePlayVideo}
+                    >
+                        {isPlaying && (
+                            <IoPause/>
+                        )}
+
+                        {!isPlaying && (
+                            <IoPlay/>
+                        )}
+                    </button>
                 </div>
             </section>
 
