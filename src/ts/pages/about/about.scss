@@ -189,6 +189,21 @@
     }
 }
 
+@media screen and (max-width: 740px) {
+    .story-grid {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: auto;
+        grid-template-areas: auto;
+    }
+
+    .story-long,
+    .mission-content,
+    .value-box {
+        padding: 12px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #about-hero {
         min-height: 375px;
