@@ -7,16 +7,37 @@ import './header.scss';
 
 const Header = () => {
     const [ isOpen, setIsOpen ] = useState(false);
+    const [ hidden, setHidden ] = useState<string>('');
+    const [ scrolled, setScrolled ] = useState<number>();
 
     const HamburgerClick = () => {
         setIsOpen(!isOpen);
         document.body.className = `${!isOpen}`
     }
 
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 150) {
+            setHidden('hidden');
+
+            if (!scrolled) {
+                setScrolled(window.scrollY);
+                return;
+            }
+
+            if (window.scrollY < scrolled) {
+                setHidden('');
+            }
+        } else {
+            setHidden('');
+        }
+
+        setScrolled(window.scrollY);
+    });
+
     return (
         <header
             id="header"
-            className={`wrapper ${isOpen}`}
+            className={`wrapper ${isOpen} ${hidden}`}
         >
             <nav
                 className="content"
