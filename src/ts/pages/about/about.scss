@@ -202,6 +202,27 @@
     .value-box {
         padding: 12px;
     }
+
+    .story-grid {
+        margin-top: -40px;
+    }
+
+    .story-head {
+        display: none;
+        text-align: center;
+    }
+
+    .story-heading {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .story-short {
+        display: none;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
