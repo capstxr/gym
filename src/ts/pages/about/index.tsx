@@ -186,7 +186,7 @@ const About = () => {
                     poster='/images/body/about/facility_poster_low.jpg'
                     id='facility-video'
                     muted
-                    src='/images/body/about/test.mp4'
+                    src='/images/body/about/facilities_low.mp4'
                     preload='none'
                     ref={vidRef}
                     loop
@@ -198,7 +198,7 @@ const About = () => {
                     poster='/images/body/about/facility_poster.jpg'
                     id='facility-video'
                     muted
-                    src='/images/body/about/test.mp4'
+                    src='/images/body/about/facilities.mp4'
                     preload='none'
                     ref={vidRef}
                     loop
