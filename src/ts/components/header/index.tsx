@@ -16,17 +16,17 @@ const Header = () => {
     }
 
     window.addEventListener('scroll', function() {
+        if (!scrolled) {
+            setScrolled(window.scrollY);
+            return;
+        }
+
+        if (window.scrollY < scrolled) {
+            setHidden('');
+        }
+
         if (window.scrollY > 150) {
             setHidden('hidden');
-
-            if (!scrolled) {
-                setScrolled(window.scrollY);
-                return;
-            }
-
-            if (window.scrollY < scrolled) {
-                setHidden('');
-            }
         } else {
             setHidden('');
         }
