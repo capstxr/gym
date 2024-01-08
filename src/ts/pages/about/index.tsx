@@ -85,11 +85,11 @@ const About = () => {
                 className="wrapper"
             >                
                 <h3 className="head-bg end">
-                    <span>S</span>
-                    <span>t</span>
+                    <span>A</span>
+                    <span>b</span>
                     <span>o</span>
-                    <span>r</span>
-                    <span>y</span>
+                    <span>u</span>
+                    <span>t</span>
                 </h3>
 
                 <div className="content">
