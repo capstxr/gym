@@ -16,18 +16,26 @@ const Header = () => {
     }
 
     window.addEventListener('scroll', function() {
+        // Check if is a mobile device
+        if (this.window.innerWidth > 860) return;
+
+        // Set initial scroll amount
         setScrolled(window.scrollY);
         
+        // Check if scrolled = null
+        // -> Will not be "undefined"
         if (!scrolled) {
             setScrolled(window.scrollY);
             return;
         }
 
+        // If we are scrolling up, unhide the header
         if (window.scrollY < scrolled) {
             setHidden('');
             return;
         }
 
+        // Hide the header once 150px have been scrolled
         if (window.scrollY > 150) {
             setHidden('hidden');
         } else {

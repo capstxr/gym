@@ -33,6 +33,7 @@ const Home = () => {
     }
 
     const Service = (props: ServiceProps) => {
+        // Initialize props
         const { img, name_1, name_2, description, urlTo, id } = props;
 
         return (
