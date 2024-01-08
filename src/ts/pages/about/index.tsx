@@ -180,7 +180,7 @@ const About = () => {
             {/* Our facilities */}
             <section id="facilities" className="wrapper">
                 <video
-                    poster='/images/body/about/facility_poster.png'
+                    poster='/images/body/about/facility_poster.jpg'
                     id='facility-video'
                     muted
                     src='/images/body/about/test.mp4'
