@@ -16,6 +16,8 @@ const Header = () => {
     }
 
     window.addEventListener('scroll', function() {
+        setScrolled(window.scrollY);
+        
         if (!scrolled) {
             setScrolled(window.scrollY);
             return;
@@ -23,6 +25,7 @@ const Header = () => {
 
         if (window.scrollY < scrolled) {
             setHidden('');
+            return;
         }
 
         if (window.scrollY > 150) {
@@ -30,8 +33,6 @@ const Header = () => {
         } else {
             setHidden('');
         }
-
-        setScrolled(window.scrollY);
     });
 
     return (
