@@ -18,6 +18,8 @@ const About = () => {
         window.scrollTo(0,0);
     }, []);
 
+    const isMobile = window.innerWidth < 600;
+
     const [ isPlaying, setIsPlaying ] = useState<boolean>(false);
 
     const vidRef = useRef<HTMLVideoElement | null>(null);
@@ -179,6 +181,19 @@ const About = () => {
 
             {/* Our facilities */}
             <section id="facilities" className="wrapper">
+                {isMobile && (
+                <video
+                    poster='/images/body/about/facility_poster_low.jpg'
+                    id='facility-video'
+                    muted
+                    src='/images/body/about/test.mp4'
+                    preload='none'
+                    ref={vidRef}
+                    loop
+                />
+                )}
+
+                {!isMobile && (
                 <video
                     poster='/images/body/about/facility_poster.jpg'
                     id='facility-video'
@@ -188,6 +203,7 @@ const About = () => {
                     ref={vidRef}
                     loop
                 />
+                )}
 
                 <div className="content">
                     <h3 id='facility-bg-head'>
