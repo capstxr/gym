@@ -128,15 +128,16 @@ const About = () => {
                             </span>
 
                             <p className="story-short idk-p">
-                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. point of using Lorem Ipsum is 
+                                Sitting at the heart of New York City, PowerGym was founded in 2022 by three personal trainers and has now helped hundreds reach their goals.
                             </p>
                         </div>
 
                         <div className="s-side-bottom" id='so'>
                             <div className="story-long">
                                 <div className="s-l-text">
-                                    <h3 className='idk'>Story</h3>
-                                    <p className='idk-p'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.point of using Lorem Ipsum.
+                                    <h3 className='idk'>What it's about</h3>
+                                    <p className='idk-p'>
+                                        We offer facilites and services for everyone from beginners to expert bodybuilders and personal trainers. If you wish to lose weight or gain muscle, we got you covered.
                                     </p>
                                 </div>
 
