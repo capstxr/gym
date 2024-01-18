@@ -133,6 +133,7 @@ const Home = () => {
                     alt="Gym Background"
                     className="landing-bg"
                     id="home-bg"
+                    loading="eager"
                 />
 
                 <div
