@@ -22,8 +22,9 @@ const ErrorPage = () => {
             >
                 <img
                     src="/images/body/home/home-landing-bg.jpg"
-                    alt=""
+                    alt="Background"
                     className="landing-bg"
+                    loading='eager'
                 />
 
                 <div

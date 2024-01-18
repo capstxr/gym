@@ -42,8 +42,7 @@ const About = () => {
         >
             {/* hero */}
             <section
-                id="about-hero"
-                className="wrapper"
+                className="wrapper landing-65vh"
             >
                 <img
                     src="/images/body/home/home-landing-bg.jpg"
