@@ -28,6 +28,7 @@ import About from './pages/about';
 import Services from './pages/services';
 import BmiCalculator from './pages/bmi_calculator';
 import Pricing from './pages/pricing';
+import TrainersPage from './pages/trainers_page';
 import ErrorPage from './pages/error_page';
 
 function App() {
@@ -68,6 +69,11 @@ function App() {
                 <Route
                     path='/bmi-calculator'
                     element={<BmiCalculator/>}
+                />
+
+                <Route
+                    path='/personal-trainers'
+                    element={<TrainersPage/>}
                 />
 
                 <Route
