@@ -25,14 +25,13 @@ import Footer from './components/footer';
 // Import Pages
 import Home from './pages/home';
 import About from './pages/about';
-import Pricing from './pages/pricing';
 import ErrorPage from './pages/error_page';
 
 function App() {
     /*
 
     - set up router for multipage support
-    - call commonly used components
+    - call common components
 
     */
 
@@ -51,11 +50,6 @@ function App() {
                 <Route
                     path='/about'
                     element={<About/>}
-                />
-
-                <Route
-                    path='/pricing'
-                    element={<Pricing/>}
                 />
 
                 <Route
