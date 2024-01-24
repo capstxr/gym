@@ -129,13 +129,13 @@ const Trainers = () => {
                     <Trainer
                         image="trainer_2"
                         name="Emma"
-                        specialiations="Crossfit, Nutrition"
+                        specialiations="Fitness, Nutrition"
                     />
 
                     <Trainer
                         image="trainer_3"
                         name="Joshua"
-                        specialiations="Crossfit, Nutrition"
+                        specialiations="Bodybuilding, Weight control"
                     />
                 </div>
 

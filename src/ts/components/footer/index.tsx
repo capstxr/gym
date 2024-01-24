@@ -56,6 +56,14 @@ const Footer = () => {
                     >
                         Store
                     </Link>
+
+                    <Link
+                        to='/bmi-calculator'
+                        rel='noreferrer noopener nofollow'
+                        className='footer-link'
+                    >
+                        BMI calculator
+                    </Link>
                 </div>
 
                 <div className="footer-list">

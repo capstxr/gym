@@ -1,0 +1,72 @@
+.bmi-grid {
+	gap: 36px;
+	margin: 40px 0;
+}
+
+.bmi-g-side {
+	width: 100%;
+}
+
+.bmi-c-form {
+	margin-top: 20px;
+	background-color: #080808;
+	padding: 18px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	border: 1px solid var(--gray);
+
+	* {
+		width: max-content;
+	}
+}
+
+.form-flex {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+}
+
+.form-input {
+	width: 100%;
+	padding: 12px 24px;
+	border: none;
+	outline: none;
+	color: #fff;
+
+	&::placeholder {
+		color: rgb(200,200,200);
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+.bmi-chart-table {
+	width: 100%;
+	text-align: center;
+	background-color: #080808;
+	border-collapse: collapse;
+
+	td, th {
+		width: 50%;
+		height: 65px;
+		border: 1px solid var(--gray);
+	}
+}
+
+#underweight {
+	color: rgb(248,200,0);
+}
+
+#healthy {
+	color: rgb(161,246,94);
+}
+
+#overweight {
+	color: rgb(255,162,75);
+}
+
+#obese {
+	color: rgb(255,75,75);
+}

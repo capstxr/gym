@@ -103,6 +103,9 @@ html {
     letter-spacing: 0.5px;
     font-weight: 300;
     transition: 0.25s;
+    border: none;
+    outline: none;
+    cursor: pointer;
 
     &:hover {
         transform: translateY(-2px);
@@ -140,6 +143,10 @@ html {
     letter-spacing: 0.75px;
     text-align: center;
     margin: 0 auto;
+}
+
+.text-start {
+    text-align: start !important;
 }
 
 .heading-text {
@@ -216,6 +223,56 @@ html {
         max-width: 1200px;
         position: relative;
     }
+}
+
+// Text font sizes
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.ls-125 {
+    letter-spacing: 1.25px;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.ls-075 {
+    letter-spacing: 0.75px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-450 {
+    font-weight: 450;
+}
+
+.fw-400 {
+    font-weight: 400;
 }
 
 @media screen and (max-width: 1360px) {

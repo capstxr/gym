@@ -25,6 +25,8 @@ import Footer from './components/footer';
 // Import Pages
 import Home from './pages/home';
 import About from './pages/about';
+import Services from './pages/services';
+import BmiCalculator from './pages/bmi_calculator';
 import ErrorPage from './pages/error_page';
 
 function App() {
@@ -50,6 +52,16 @@ function App() {
                 <Route
                     path='/about'
                     element={<About/>}
+                />
+
+                <Route
+                    path='/services'
+                    element={<Services/>}
+                />
+
+                <Route
+                    path='/bmi-calculator'
+                    element={<BmiCalculator/>}
                 />
 
                 <Route
