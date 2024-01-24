@@ -54,7 +54,7 @@ const Pricing = () => {
 							<div className="included">
 								<PlanIncludes
 									isIncluded
-									name="1 free weekly visit"
+									name="1 free monthly visit"
 								/>
 
 								<PlanIncludes

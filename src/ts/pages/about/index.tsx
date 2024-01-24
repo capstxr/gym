@@ -164,7 +164,7 @@ const About = () => {
                                 </h3>
 
                                 <p className='idk-p white'>
-                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.point of using Lorem Ipsum.
+                                    Since
                                 </p>
                             </div>
                         </div>
