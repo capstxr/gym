@@ -27,6 +27,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Services from './pages/services';
 import BmiCalculator from './pages/bmi_calculator';
+import Pricing from './pages/pricing';
 import ErrorPage from './pages/error_page';
 
 function App() {
@@ -57,6 +58,11 @@ function App() {
                 <Route
                     path='/services'
                     element={<Services/>}
+                />
+
+                <Route
+                    path='/pricing'
+                    element={<Pricing/>}
                 />
 
                 <Route

@@ -1,0 +1,161 @@
+.pricing-grid {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	margin: 40px 0;
+}
+
+.plan-wrapper {
+	background-color: var(--gray);
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-top: 3px solid var(--red);
+	width: 100%;
+	position: relative;
+}
+
+.popular-plan {
+	position: absolute;
+	top: 2px;
+	background-color: var(--red);
+	padding: 6px 24px;
+	transform: rotate(45deg);
+	right: -21px;
+}
+
+.plan-top {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.plan-line {
+	width: 100%;
+	margin: 20px 0;
+	border: 1px solid #fff;
+}
+
+.plan-bottom {
+	width: 100%;
+}
+
+.included {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+	gap: 24px;
+}
+
+.plan-includes {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 12px;
+}
+
+.plan-icon {
+	margin-left: 7px;
+	margin-top: -2px;
+	width: 30px;
+	font-size: 30px;
+	height: 30px;
+}
+
+@media screen and (max-width: 1190px) {
+	.pricing-grid {
+		gap: 8px;
+	}
+
+	.plan-top span:first-of-type {
+		font-size: 22px;
+	}
+
+	.plan-top span:last-of-type {
+		font-size: 20px;
+	}
+
+	.plan-bottom {
+		* {
+			font-size: 14px !important;
+		}
+
+		.plan-icon {
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.pricing-grid {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		gap: 36px;
+	}
+
+	.plan-top span:first-of-type {
+		font-size: 24px;
+	}
+
+	.plan-top span:last-of-type {
+		font-size: 22px;
+	}
+
+	.plan-bottom {
+		* {
+			font-size: 16px !important;
+		}
+
+		.plan-icon {
+			width: 28px;
+			height: 28px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.pricing-grid {
+		gap: 24px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.pricing-grid {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.plan-top span:first-of-type {
+		font-size: 22px !important;
+	}
+
+	.plan-top span:last-of-type {
+		font-size: 20px !important;
+	}
+
+	.popular-plan {
+		font-size: 14px !important;
+	}
+
+	.plan-bottom {
+		* {
+			font-size: 14px !important;
+		}
+
+		.plan-icon {
+			width: 24px !important;
+			height: 24px !important;
+		}
+	}
+}
