@@ -74,7 +74,7 @@ const TrainersPage = () => {
 					</p>
 
 					<Link
-						to={`/trainers/${url}`}
+						to={`/personal-trainers/${url}`}
 						rel='noreferrer noopener nofollow'
 						className='red-btn-1 white b-4'
 					>
