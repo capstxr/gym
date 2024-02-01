@@ -164,7 +164,7 @@ const About = () => {
                                 </h3>
 
                                 <p className='idk-p white'>
-                                    Since
+                                    With cutting-edge facilities, expert guidance, and unwavering support, we're here to help you reach your fitness goals and thrive. Join us in redefining fitness and unlocking your full potential.
                                 </p>
                             </div>
                         </div>
@@ -172,7 +172,9 @@ const About = () => {
                         <div className="s-side-top" id='ov'>
                             <div className="value-box">
                                 <h3 className='id'>Our Values</h3>
-                                <p className='idk-p'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.point of using Lorem Ipsum.</p>
+                                <p className='idk-p'>
+                                    We stand for excellence, inclusivity, integrity, and innovation. These values shape our commitment to providing a supportive community and exceptional fitness experience for all.
+                                </p>
                             </div>
                         </div>
                     </div>
