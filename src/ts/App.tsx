@@ -21,6 +21,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CookiePopup from './components/cookies';
 import Header from './components/header';
 import Footer from './components/footer';
+import InWorks from './components/body/in_works_popup';
 
 // Import Pages
 import Home from './pages/home';
@@ -44,6 +45,8 @@ function App() {
             <Header/>
 
             {/* <CookiePopup/> */}
+
+            <InWorks/>
 
             <Routes>
                 <Route
